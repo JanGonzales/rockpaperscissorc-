@@ -15,7 +15,7 @@ int main(){
 
     std::cout << "1) ✊\n";
     std::cout << "2) ✋\n";
-    std::cout << "3) ✌️\n";
+    std::cout << "3) ✌️😊\n";
 
     std::cout << "shoot!" << std::endl;
     std::cin >> user;
@@ -25,8 +25,20 @@ int main(){
         std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl;
     }
     else if (user == 1 && computer == 3){
-        std::cout << "You won,. well done" << std::endl;
+        std::cout << "You won,. well done" << user << std::endl;
         std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl; 
+    }
+    else if(user > computer){
+        std::cout << "You won,. well done" << user << std::endl;
+        std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl; 
+    }
+    else if (user == 3 && computer == 2){
+        std::cout << "You won,. well done" << user << std::endl;
+        std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl; 
+    }
+    else{
+        std::cout << "You lost, you chose: " << user <<std::endl;
+        std::cout << "The computer chose: " << computer << std::endl;
     }
 
      
