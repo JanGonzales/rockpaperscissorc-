@@ -5,7 +5,7 @@
 
 int main(){
     srand (time(NULL));
-    int computer = rand() % 3+ 1;
+    int computer = rand() % 5+ 1;
 
     int user = 0;
 
@@ -26,16 +26,24 @@ int main(){
         std::cout << "It is a draw" << std::endl;
         std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl;
     }
-    else if (user == 1 && computer == 3){
-        std::cout << "You won,. well done" << user << std::endl;
+    else if (user == 1 && computer == 3 or computer == 4){
+        std::cout << "You won,. well done " << user << std::endl;
         std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl; 
     }
-    else if(user > computer){
-        std::cout << "You won,. well done" << user << std::endl;
+    else if(user == 2 && computer == 1 or computer == 5 ){
+        std::cout << "You won,. well done " << user << std::endl;
         std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl; 
     }
-    else if (user == 3 && computer == 2){
-        std::cout << "You won,. well done" << user << std::endl;
+    else if (user == 3 && computer == 2 or computer == 5){
+        std::cout << "You won,. well done " << user << std::endl;
+        std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl; 
+    }
+    else if(user == 4 && computer == 2 or computer == 5 ){
+        std::cout << "You won,. well done " << user << std::endl;
+        std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl; 
+    }
+    else if(user == 5 && computer == 1 or computer == 3 ){
+        std::cout << "You won,. well done " << user << std::endl;
         std::cout << "Computer chose: " << computer <<  " Player chose: " << user << std::endl; 
     }
     else{
