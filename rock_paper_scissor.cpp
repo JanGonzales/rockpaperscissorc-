@@ -16,6 +16,8 @@ int main(){
     std::cout << "1) ✊\n";
     std::cout << "2) ✋\n";
     std::cout << "3) ✌️😊\n";
+    std::cout << "4) 🦎Lizards" << std::endl;
+    std::cout << "5) ✌️Spock" << std::endl;
 
     std::cout << "shoot!" << std::endl;
     std::cin >> user;
@@ -38,7 +40,7 @@ int main(){
     }
     else{
         std::cout << "You lost, you chose: " << user <<std::endl;
-        std::cout << "The computer chose: " << computer << std::endl;
+        std::cout << "The computer chose: " << computer << std::endl;\
     }
 
      
